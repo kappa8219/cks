@@ -1,8 +1,9 @@
 locals {
-  region                 = "eu-north-1"
-  backend_region         = "eu-north-1"
-  backend_bucket         = "sre-learning-platform-state-backet"
+  region                 = "us-east-2"
+  backend_region         = "us-east-2"
+  backend_bucket         = "ok-ohio-learning-platform-state-backet"
   backend_dynamodb_table = "${local.backend_bucket}-lock"
+  skip_outputs           = true
 }
 
 generate "backend" {
